@@ -29,6 +29,8 @@ if ((!moment || !later) && (typeof require !== 'undefined')) {
 
 (function() {
 
+    var cronParser = cronParser || later.parse.cron;
+
   /*
    * For an array of numbers, e.g. a list of hours in a schedule,
    * return a string listing out all of the values (complete with
